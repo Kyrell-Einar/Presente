@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Um Ano Juntos</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nossas Memórias — Heron & Taissa</title>
+  <link rel="stylesheet" href="./meu-aniversario/assets/css/style.css" />
 </head>
 <body>
 
-  <!-- Background Canvas -->
+  <!-- Canvas de fundo (estrelas + chuva) -->
   <canvas id="background"></canvas>
 
   <!-- Música de fundo -->
-  <audio id="bg-music" src="./meu-aniversario/assets/sons/calming-rain-257596.mp3" autoplay loop></audio>
+  <audio id="background-music" src="./meu-aniversario/assets/sons/calming-rain-257596.mp3" loop></audio>
+  <!-- efeito de clique (opcional) -->
+  <audio id="click-sound" src="./meu-aniversario/assets/sounds/click.mp3" preload="auto"></audio>
 
   <!-- Header -->
   <header class="header">
-    <h1 class="gradient-text">Um ano juntos</h1>
-    <p>Nosso amor em cada detalhe</p>
+    <h1 class="gradient-text">Nossas Memórias</h1>
+    <p>Desde 09/11/2025 — Heron & Taissa</p>
   </header>
 
   <!-- Contador regressivo -->
@@ -25,7 +27,7 @@
     <div id="timer">Calculando...</div>
   </section>
 
-  <!-- Timeline -->
+  <!-- Timeline / Momentos -->
   <section class="timeline">
     <h2>Nossos Momentos</h2>
     <div class="events">
@@ -38,7 +40,7 @@
     </div>
   </section>
 
-  <!-- Mensagem -->
+  <!-- Mensagem curta -->
   <section class="message">
     <h2>Para você</h2>
     <p>Um ano de lembranças, risadas, desafios e carinho. Que venham muitos mais.</p>
@@ -47,51 +49,51 @@
   <!-- Carrossel de Fotos -->
   <section class="gallery">
     <h2>Momentos nossos</h2>
-   <div class="carousel">
-  <button class="prev">‹</button>
-  <div class="carousel-track">
-    <img src="./meu-aniversario/assets/fotos/1.jpg" alt="Foto 1">
-    <img src="./meu-aniversario/assets/fotos/2.jpg" alt="Foto 2">
-    <img src="./meu-aniversario/assets/fotos/3.jpg" alt="Foto 3">
-    <img src="./meu-aniversario/assets/fotos/4.jpg" alt="Foto 4">
-    <img src="./meu-aniversario/assets/fotos/5.jpg" alt="Foto 5">
-    <img src="./meu-aniversario/assets/fotos/6.jpg" alt="Foto 6">
-    <img src="./meu-aniversario/assets/fotos/7.jpg" alt="Foto 7">
-    <img src="./meu-aniversario/assets/fotos/8.jpg" alt="Foto 8">
-    <img src="./meu-aniversario/assets/fotos/9.jpg" alt="Foto 9">
-  </div>
-  <button class="next">›</button>
-</div>
+    <div class="carousel">
+      <button class="prev" aria-label="Anterior">‹</button>
+      <div class="carousel-track">
+        <img src="./meu-aniversario/assets/fotos/1.jpg" alt="Foto 1" />
+        <img src="./meu-aniversario/assets/fotos/2.jpg" alt="Foto 2" />
+        <img src="./meu-aniversario/assets/fotos/3.jpg" alt="Foto 3" />
+        <img src="./meu-aniversario/assets/fotos/4.jpg" alt="Foto 4" />
+        <img src="./meu-aniversario/assets/fotos/5.jpg" alt="Foto 5" />
+        <img src="./meu-aniversario/assets/fotos/6.jpg" alt="Foto 6" />
+        <img src="./meu-aniversario/assets/fotos/7.jpg" alt="Foto 7" />
+        <img src="./meu-aniversario/assets/fotos/8.jpg" alt="Foto 8" />
+        <img src="./meu-aniversario/assets/fotos/9.jpg" alt="Foto 9" />
+      </div>
+      <button class="next" aria-label="Próximo">›</button>
+    </div>
+  </section>
 
-  <!-- Poema -->
-<section class="poem">
-  <h2>Nosso Poema</h2>
-  <div id="poem-text">
-    <p>Como gotas de chuva, me apaixonei por você, silencioso, inevitavelmente.</p><br>
-    <p>Desabrochei como uma pétala diante do sol da manhã, e cada raio seu me atravessou até o coração.</p><br>
-    <p>Banhando seu peito, fui maré e maré-alta, quebrando em você como ondas que não sabem parar.</p><br>
-    <p>Cada gota era um desejo, preso a história desse desejo que me mantém vivo, e agora tudo em mim corre como um oceano tentando alcançar seu coração.</p><br>
-    <p>Não quero ser tempestade, nem trovão.<br>Quero ser o sussurro que você ouve quando o sol toca a janela.<br>Quero seu pulso se alinhando ao meu em silêncio, como dois rios que se encontram depois de uma noite longa demais.</p><br>
-    <p>Mas antes do sol, veio a chuva.<br>Lembro daquela noite, quando o céu desabou sobre nós dois.<br>A chuva corria pelo rosto, fria, mas o seu riso, era quente o bastante pra secar o mundo inteiro.<br>As luzes dançavam como estrelas líquidas, e por um segundo o tempo pareceu parar, só pra nos deixar ali, entre o trovão e o toque.<br>Foi ali, sob a tempestade, que entendi: eu já estava perdido em você.</p><br>
-    <p>Quero ser o horizonte que você saboreia com os olhos fechados.<br>A tela onde as estrelas escrevem o que não ousamos dizer.</p><br>
-    <p>Quero que o vento nos teça juntos, que as árvores se inclinem pra ver, que o ar pese com o aroma do nosso abraço.</p><br>
-    <p>Quero afundar em você como o crepúsculo se afoga no mar, sem pressa, sem volta.<br>Que cada instante seja um movimento que nos empurra de volta um ao outro.</p><br>
-    <p>Quero que sejamos o instante entre o sol e as estrelas, suspensos, presos, infinitos.</p><br>
-    <p>E mesmo quando você escapar do meu alcance, ainda cairei por você.<br>Como gotas de chuva.<br>De cada canto do céu, de cada canto meu.</p><br>
-    <p>Guarde esse poema no peito.<br>Cada linha é uma gota de mim, e mesmo se o tempo nos desgastar, ainda assim eu cairia mil vezes, só pra te encontrar outra vez.</p>
-  </div>
-</section>
+  <!-- Poema (cada parágrafo separado em <p>) -->
+  <section class="poem">
+    <h2>Nosso Poema</h2>
+    <div class="poem-text">
+      <p>Como gotas de chuva, me apaixonei por você, silencioso, inevitavelmente.</p>
+      <p>Desabrochei como uma pétala diante do sol da manhã, e cada raio seu me atravessou até o coração.</p>
+      <p>Banhando seu peito, fui maré e maré-alta, quebrando em você como ondas que não sabem parar.</p>
+      <p>Cada gota era um desejo, preso a história desse desejo que me mantém vivo, e agora tudo em mim corre como um oceano tentando alcançar seu coração.</p>
+      <p>Não quero ser tempestade, nem trovão. Quero ser o sussurro que você ouve quando o sol toca a janela. Quero seu pulso se alinhando ao meu em silêncio, como dois rios que se encontram depois de uma noite longa demais.</p>
+      <p>Mas antes do sol, veio a chuva. Lembro daquela noite, quando o céu desabou sobre nós dois. A chuva corria pelo rosto, fria, mas o seu riso, era quente o bastante pra secar o mundo inteiro. As luzes dançavam como estrelas líquidas, e por um segundo o tempo pareceu parar, só pra nos deixar ali, entre o trovão e o toque. Foi ali, sob a tempestade, que entendi: eu já estava perdido em você.</p>
+      <p>Quero ser o horizonte que você saboreia com os olhos fechados. A tela onde as estrelas escrevem o que não ousamos dizer.</p>
+      <p>Quero que o vento nos teça juntos, que as árvores se inclinem pra ver, que o ar pese com o aroma do nosso abraço.</p>
+      <p>Quero afundar em você como o crepúsculo se afoga no mar, sem pressa, sem volta. Que cada instante seja um movimento que nos empurra de volta um ao outro.</p>
+      <p>Quero que sejamos o instante entre o sol e as estrelas, suspensos, presos, infinitos.</p>
+      <p>E mesmo quando você escapar do meu alcance, ainda cairei por você. Como gotas de chuva. De cada canto do céu, de cada canto meu.</p>
+      <p>Guarde esse poema no peito. Cada linha é uma gota de mim, e mesmo se o tempo nos desgastar, ainda assim eu cairia mil vezes, só pra te encontrar outra vez.</p>
+    </div>
+  </section>
 
-
-  <!-- Easter Egg -->
-  <div id="easter-egg">💖 Surpresa! 💖</div>
+  <!-- Easter egg -->
+  <div id="easter-egg" style="display:none">💖 Surpresa! 💖</div>
 
   <!-- Footer -->
   <footer class="footer">
-    Feito com 💖 para nós
+    <p>Feito com 💖 — Heron & Taissa</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Script principal -->
+  <script src="./meu-aniversario/assets/js/script.js"></script>
 </body>
 </html>
-
